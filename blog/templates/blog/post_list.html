@@ -3,6 +3,13 @@
   <title>Test Page</title>
 </head>
 <body>
-  Test Success !
+  Test Success ! <br>
+{% for post in posts %}
+<hr>
+<div>
+  <h1>{{post.title}}</h1>
+  <p> Published: {{post.published_date}}</p>
+  <p>{{post.text}}</p>
+{%endfor%}
 </body>
 </html>
